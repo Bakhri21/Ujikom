@@ -1,0 +1,65 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px 0px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 2px 3px 5px 0px black;
+  border-radius: 15px;
+}
+
+main button {
+  cursor: pointer;
+  width: 80%;
+  padding: 10px 0px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main button:hover {
+  opacity: 0.8;
+}
+
+main .siswa {
+  background-color: rgb(67, 230, 67);
+}
+main .guru {
+  background-color: rgb(5, 131, 5);
+}
+main .orang-tua {
+  background-color: rgb(3, 65, 3);
+}
+main .staff {
+  background-color: rgb(56, 77, 56);
+}
+main .admin {
+  background-color: rgb(67, 170, 230);
+}
+main .admin-it {
+  background-color: rgb(10, 91, 145);
+}

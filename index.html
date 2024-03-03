@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Sistem Informasi Jurusan | Rekayasa Perangkat Lunak</title>
+  </head>
+  <body>
+    <main>
+      <button class="siswa" type="button" id="siswa">
+        Masuk Sebagai Siswa
+      </button>
+      <button class="guru" type="button">Masuk Sebagai Guru</button>
+      <button class="orang-tua" type="button">Masuk Sebagai Orang Tua</button>
+      <button class="staff" type="button">Masuk Sebagai Staff</button>
+      <button class="admin" type="button">Masuk Sebagai Admin Sekolah</button>
+      <button class="admin-it" type="button" onclick="adminIT()">
+        Masuk Sebagai Admin IT
+      </button>
+    </main>
+    <script>
+      function adminIT() {
+        window.location.href = "adminIT/login_admin_it.php";
+      }
+    </script>
+  </body>
+</html>
