@@ -7,13 +7,13 @@
   </head>
 
   <body>
-    <!-- <?php
+    <?php
     session_start();
 
     if (!isset($_SESSION['login_admin_it']) || $_SESSION['login_admin_it'] !== true || $_SESSION['login_admin_it'] == "") {
         header("location:login_admin_it.php?pesan=gagal");
     }
-    ?> -->
+    ?>
 
     <header>
       <div class="Text-title">
@@ -25,7 +25,7 @@
         <a href="halaman_data_guru_admin_it.php">Data Guru</a>
       </nav>
       <div class="Action">
-        <a href="logout.php">Log Out</a>
+        <a href="../logout.php">Log Out</a>
       </div>
     </header>
     <main>

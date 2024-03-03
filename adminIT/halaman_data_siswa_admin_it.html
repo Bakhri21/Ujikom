@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/halaman_data_siswa.css" />
+    <title>Sistem Informasi Jurusan | Rekayasa Perangkat Lunak</title>
+  </head>
+
+  <body>
+    <!-- <?php
+    session_start();
+
+    if (!isset($_SESSION['login_admin_it']) || $_SESSION['login_admin_it'] !== true || $_SESSION['login_admin_it'] == "") {
+        header("location:login_admin_it.php?pesan=gagal");
+    }
+    ?> -->
+
+    <header>
+      <div class="Text-title">
+        <h1>Rekayasa Perangkat Lunak</h1>
+      </div>
+      <nav class="Menu">
+        <a href="halaman_admin_it.php">Beranda</a>
+        <a href="halaman_data_siswa_admin_it.php">Data Siswa</a>
+        <a href="halaman_data_guru_admin_it.php">Data Guru</a>
+      </nav>
+      <div class="Action">
+        <a href="../logout.php">Log Out</a>
+      </div>
+    </header>
+    <main>
+      <section class="informasi">
+        <h1>Data siswa siswi SMKN 5 KOTA BEKASI</h1>
+        <h2>Rekayasa Perangkat Lunak</h2>
+      </section>
+      <section class="menu-kelas">
+        <h2>Pilih Kelas</h2>
+        <div>
+          <button type="button">XII RPL 1</button>
+          <button type="button">XII RPL 2</button>
+          <button type="button">XII RPL 3</button>
+        </div>
+      </section>
+      <section class="data-siswa" id="xiirpl1">
+        <nav class="tambah-data">
+          <button class="tambah-data-siswa" id="addDataSiswa">
+            Tambah Data
+          </button>
+        </nav>
+        <table>
+          <thead>
+            <tr>
+              <th>NIS</th>
+              <th>NAMA</th>
+              <th>KELAS</th>
+              <th>PWEB</th>
+              <th>PKK</th>
+              <th>BASIS DATA</th>
+              <th>PBO</th>
+              <th>EDIT</th>
+              <th>HAPUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>212210028</td>
+            <td>Rayhan Nurahman</td>
+            <td>XII RPL 1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>Edit</td>
+            <td>Hapus</td>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>2024 &copy; Copyright Rayhan Nurahman All Right Reserve</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(50, 50, 50);
+}
+
+header .Text-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: 10vh;
+}
+
+header .Text-title h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: yellow;
+}
+
+header nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+header nav a:hover {
+  transform: translateX(-5px);
+}
+
+header .Action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+header .Action a {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+}
+
+header .Action a:hover {
+  background-color: rgb(168, 0, 0);
+  border: none;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: transparent;
+}
+
+main .informasi {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+main .informasi h1 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .informasi h2 {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+main .menu-kelas {
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+}
+
+main .menu-kelas h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+main .menu-kelas div {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  gap: 1rem;
+}
+
+main .menu-kelas div button {
+  cursor: pointer;
+  width: 30%;
+  height: 35px;
+  background-color: tomato;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+main .menu-kelas div button:hover {
+  background-color: rgb(211, 50, 22);
+}
+
+main .data-siswa {
+  padding: 0px 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .data-siswa .tambah-data {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  border-radius: 5px;
+}
+
+main .data-siswa .tambah-data button {
+  cursor: pointer;
+  width: 10%;
+  height: 35px;
+  background-color: rgb(30, 116, 230);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+main .data-siswa .tambah-data button:hover {
+  background-color: rgb(22, 78, 163);
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  font-weight: 400;
+}
