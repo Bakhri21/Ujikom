@@ -25,7 +25,8 @@
         <a href="halaman_data_guru_admin_it.php">Data Guru</a>
       </nav>
       <div class="Action">
-        <a href="../logout.php">Log Out</a>
+        <a class="tambah-user-btn" href="tambah-user.html">Tambah User</a>
+        <a class="logout" href="../logout.php">Log Out</a>
       </div>
     </header>
     <main>
@@ -36,9 +37,9 @@
       <section class="menu-kelas">
         <h2>Pilih Kelas</h2>
         <div>
-          <button type="button">XII RPL 1</button>
-          <button type="button">XII RPL 2</button>
-          <button type="button">XII RPL 3</button>
+          <button type="button" onclick="showXIIRPL1()">XII RPL 1</button>
+          <button type="button" onclick="showXIIRPL2()">XII RPL 2</button>
+          <button type="button" onclick="showXIIRPL3()">XII RPL 3</button>
         </div>
       </section>
       <section class="data-siswa" id="xiirpl1">
@@ -74,9 +75,106 @@
           </tbody>
         </table>
       </section>
+      <section class="data-siswa" id="xiirpl2">
+        <nav class="tambah-data">
+          <button class="tambah-data-siswa" id="addDataSiswa">
+            Tambah Data
+          </button>
+        </nav>
+        <table>
+          <thead>
+            <tr>
+              <th>NIS</th>
+              <th>NAMA</th>
+              <th>KELAS</th>
+              <th>PWEB</th>
+              <th>PKK</th>
+              <th>BASIS DATA</th>
+              <th>PBO</th>
+              <th>EDIT</th>
+              <th>HAPUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>212210028</td>
+            <td>Rayhan</td>
+            <td>XII RPL 1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>Edit</td>
+            <td>Hapus</td>
+          </tbody>
+        </table>
+      </section>
+      <section class="data-siswa" id="xiirpl3">
+        <nav class="tambah-data">
+          <button class="tambah-data-siswa" id="addDataSiswa">
+            Tambah Data
+          </button>
+        </nav>
+        <table>
+          <thead>
+            <tr>
+              <th>NIS</th>
+              <th>NAMA</th>
+              <th>KELAS</th>
+              <th>PWEB</th>
+              <th>PKK</th>
+              <th>BASIS DATA</th>
+              <th>PBO</th>
+              <th>EDIT</th>
+              <th>HAPUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>212210028</td>
+            <td>Rayhan21</td>
+            <td>XII RPL 1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>Edit</td>
+            <td>Hapus</td>
+          </tbody>
+        </table>
+      </section>
     </main>
     <footer>
       <p>2024 &copy; Copyright Rayhan Nurahman All Right Reserve</p>
     </footer>
+    <script>
+      function showXIIRPL1() {
+        var xiirpl1 = document.getElementById("xiirpl1");
+        var xiirpl2 = document.getElementById("xiirpl2");
+        var xiirpl3 = document.getElementById("xiirpl3");
+
+        xiirpl1.style.display = "flex";
+        xiirpl2.style.display = "none";
+        xiirpl3.style.display = "none";
+      }
+
+      function showXIIRPL2() {
+        var xiirpl1 = document.getElementById("xiirpl1");
+        var xiirpl2 = document.getElementById("xiirpl2");
+        var xiirpl3 = document.getElementById("xiirpl3");
+
+        xiirpl1.style.display = "none";
+        xiirpl2.style.display = "flex";
+        xiirpl3.style.display = "none";
+      }
+
+      function showXIIRPL3() {
+        var xiirpl1 = document.getElementById("xiirpl1");
+        var xiirpl2 = document.getElementById("xiirpl2");
+        var xiirpl3 = document.getElementById("xiirpl3");
+
+        xiirpl1.style.display = "none";
+        xiirpl2.style.display = "none";
+        xiirpl3.style.display = "flex";
+      }
+    </script>
   </body>
 </html>

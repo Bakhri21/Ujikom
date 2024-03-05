@@ -33,7 +33,7 @@ header .Text-title {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 10vh;
 }
 
@@ -64,14 +64,14 @@ header nav a:hover {
 
 header .Action {
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   width: auto;
   height: auto;
 }
 
-header .Action a {
+header .Action .logout {
   padding: 10px;
   font-weight: 600;
   border-radius: 5px;
@@ -79,8 +79,21 @@ header .Action a {
   background-color: red;
 }
 
-header .Action a:hover {
+header .Action .logout:hover {
   background-color: rgb(168, 0, 0);
+  border: none;
+}
+
+header .Action .tambah-user-btn {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(13, 235, 105);
+}
+
+header .Action .tambah-user-btn:hover {
+  background-color: rgb(10, 155, 87);
   border: none;
 }
 
@@ -161,7 +174,7 @@ main .menu-kelas div button:hover {
 main .data-siswa {
   padding: 0px 10px;
   width: 80%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -190,8 +203,27 @@ main .data-siswa .tambah-data button:hover {
   background-color: rgb(22, 78, 163);
 }
 
+main .data-siswa table {
+  padding: 10px 0px;
+  width: 100%;
+}
+
+main .data-siswa table th {
+  padding: 4px 0px;
+  background-color: tomato;
+  color: whitesmoke;
+}
+
+main .data-siswa table td {
+  padding: 2px 0px;
+  background-color: rgb(253, 137, 116);
+  color: black;
+  text-align: center;
+}
+
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;

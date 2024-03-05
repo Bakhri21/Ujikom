@@ -1,0 +1,137 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px 0px;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 2px 3px 5px 0px black;
+  border-radius: 15px;
+}
+
+main button {
+  cursor: pointer;
+  width: 80%;
+  padding: 10px 0px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main button:hover {
+  opacity: 0.8;
+}
+
+main .siswa {
+  background-color: rgb(67, 230, 67);
+}
+main .guru {
+  background-color: rgb(5, 131, 5);
+}
+main .orang-tua {
+  background-color: rgb(3, 65, 3);
+}
+main .staff {
+  background-color: rgb(56, 77, 56);
+}
+main .admin {
+  background-color: rgb(67, 170, 230);
+}
+main .admin-it {
+  background-color: rgb(10, 91, 145);
+}
+
+main .form-add-user-siswa {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 100%;
+  height: 80%;
+  transform: scaleY(0);
+}
+
+main .form-add-user-siswa form {
+  width: 40%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(220, 245, 239, 0.1);
+  box-shadow: 2px 3px 5px 0px black;
+  backdrop-filter: blur(50px);
+}
+
+main .form-add-user-siswa form label {
+  width: 50%;
+  text-align: left;
+}
+
+main .form-add-user-siswa form input,
+main .form-add-user-siswa form select,
+main .form-add-user-siswa form textarea {
+  width: 40%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(168, 168, 168);
+  color: white;
+}
+
+main .form-add-user-siswa form input:focus,
+main .form-add-user-siswa form select:focus,
+main .form-add-user-siswa form textarea:focus {
+  background-color: azure;
+  border-bottom: 0.5px solid white;
+  color: rgb(70, 64, 64);
+}
+
+main .form-add-user-siswa form div {
+  margin: 20px 0px 10px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+main .form-add-user-siswa form div .tambah-btn {
+  width: 50%;
+  background-color: green;
+  border-radius: 5px;
+  padding: 8px 0px;
+}
+
+main .form-add-user-siswa form div .tutup-form {
+  width: 30%;
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px 0px;
+}
