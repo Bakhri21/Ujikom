@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ibu = htmlspecialchars(mysqli_real_escape_string($conn, $_POST["nama_ibu"]));
 
     $sql = "INSERT INTO $kelas (nis,nama,password,kelas,tempat_lahir,tgl_lahir,jenis_kelamin,agama,alamat,nama_ayah,nama_ibu)
-    VALUES('$nis','$nama','$password','$kelas','$tempat_lahir', '$tgl_lahir','$tempat_lahir','$jk','$agama','$alamat','$ayah','$ibu')";
+    VALUES('$nis','$nama','$password','$kelas','$tempat_lahir', '$tgl_lahir','$jk','$agama','$alamat','$ayah','$ibu')";
 
     if ($conn->query($sql) === true) {
         header("location:tambah-user.html");
